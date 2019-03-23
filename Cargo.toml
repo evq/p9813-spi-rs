@@ -1,0 +1,16 @@
+[package]
+name = "p9813-spi"
+version = "0.1.0"
+authors = ["eV <ev@7pr.xyz>"]
+edition = "2018"
+categories = [
+    "embedded",
+    "no-std",
+    "hardware-support"]
+keywords = ["smart-leds", "p9813"]
+description = "SPI-based driver for p9813 leds"
+
+[dependencies]
+nb = "0.1.1"
+smart-leds-trait = "0.1"
+embedded-hal = "0.2.1"
