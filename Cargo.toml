@@ -12,5 +12,5 @@ description = "SPI-based driver for p9813 leds"
 
 [dependencies]
 nb = "0.1.1"
-smart-leds-trait = "0.1"
+smart-leds-trait = { git = "https://github.com/evq/smart-leds-trait", branch = "wip" }
 embedded-hal = "0.2.1"
