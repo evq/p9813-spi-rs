@@ -31,7 +31,7 @@ where
     }
 
     fn flush(&mut self) -> Result<(), E> {
-        self.spi.write(&[0; 20])?;
+        self.spi.write(&[0; 4])?;
         Ok(())
     }
 }
@@ -61,6 +61,7 @@ where
             self.spi.write(&[top, b, g, r])?;
         }
 
+        self.flush()?;
         self.flush()?;
 
         Ok(())
